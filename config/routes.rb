@@ -1,5 +1,9 @@
 FirstApp::Application.routes.draw do
+  get "root/home"
   resources :users
+
+  #This maps / to the root#home action
+  root to:'root#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
